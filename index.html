@@ -5,45 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astha's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Astha's Portfolio</h1>
-        <p>Data Analyst & AI Product Thinker</p>
-    </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I’m a passionate data analyst and AI product thinker with a background in Electronics and Communication Engineering. As a self-taught learner, I’ve developed skills in Python, SQL, Power BI, and web development to create impactful solutions. I love solving problems and building tools that make a difference!</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>AI Email Rewriter</h3>
-            <p>A web app that rewrites emails based on a user’s profession and recipient using the OpenRouter API. Built with HTML, CSS, and JavaScript.</p>
-            <a href="https://Asthaup.github.io/email-rewriter">Live Demo</a> | 
-            <a href="https://https://github.com/Asthaup/email-rewriter">GitHub</a>
+    <nav class="navbar">
+        <div class="logo">Astha</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Astha</h1>
+            <p>Data Analyst & AI Product Thinker</p>
+            <a href="#projects" class="btn">Explore My Work</a>
         </div>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Power BI</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>AI Development (OpenRouter API)</li>
-            <li>Data Analysis</li>
-        </ul>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://via.placeholder.com/200" alt="Astha's Photo">
+            <p>I’m a passionate data analyst and AI product thinker with a background in Electronics and Communication Engineering. As a self-taught learner, I’ve developed skills in Python, SQL, Power BI, and web development to create impactful solutions. I love solving problems and building tools that make a difference. Let’s create something amazing together!</p>
+        </div>
     </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out for opportunities or collaboration!</p>
-        <p>Email: <a href="mailto:asthau456@gmail.com">your-email@example.com</a></p>
-        <p>LinkedIn: <a href="www.linkedin.com/in/astha-upadhyay-66ab671b2">Your LinkedIn Profile</a></p>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>AI Email Rewriter</h3>
+                <p>A web app that rewrites emails based on a user’s profession and recipient using the OpenRouter API. Built with HTML, CSS, and JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://https://github.com/Asthaup/email-rewriter" target="_blank">Live Demo</a>
+                    <a href="https://https://github.com/Asthaup/email-rewriter" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>AI Quiz Generator (In Progress)</h3>
+                <p>A web app that generates trivia quizzes on user-selected topics using AI. Built with HTML, CSS, and JavaScript.</p>
+                <div class="project-links">
+                    <a href="https://YOUR_USERNAME.github.io/ai-quiz-generator" target="_blank">Live Demo</a>
+                    <a href="https://github.com/YOUR_USERNAME/ai-quiz-generator" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <span>Python</span>
+                <div class="progress-bar"><div class="progress python"></div></div>
+            </div>
+            <div class="skill">
+                <span>SQL</span>
+                <div class="progress-bar"><div class="progress sql"></div></div>
+            </div>
+            <div class="skill">
+                <span>Power BI</span>
+                <div class="progress-bar"><div class="progress powerbi"></div></div>
+            </div>
+            <div class="skill">
+                <span>HTML/CSS/JS</span>
+                <div class="progress-bar"><div class="progress webdev"></div></div>
+            </div>
+            <div class="skill">
+                <span>AI Development</span>
+                <div class="progress-bar"><div class="progress ai"></div></div>
+            </div>
+            <div class="skill">
+                <span>Data Analysis</span>
+                <div class="progress-bar"><div class="progress data"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Let’s connect! Reach out for opportunities or collaboration.</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> <a href="asthau456@gmail.com">your-email@example.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/astha-upadhyay-66ab671b2/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+        <div class="contact-form">
+            <p class="form-note">Note: Form submission is disabled due to sandbox restrictions, but you can preview the design!</p>
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button onclick="alert('Form submission is disabled due to sandbox restrictions.')">Send Message</button>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Astha. All rights reserved.</p>
+        <p>© 2025 Astha. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/astha-upadhyay-66ab671b2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Asthaup" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
